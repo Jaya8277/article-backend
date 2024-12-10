@@ -199,7 +199,7 @@ app.get("/",(req,res)=>{
     res.end("HomePage")
 })
 
-mongoose.connect("mongodb+srv://article:article@cluster0.bogpwsc.mongodb.net/?retryWrites=true&w=majority",connectionparams).then(()=>{
+mongoose.connect("mongodb+srv://blog:blog@cluster0.bufrh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",connectionparams).then(()=>{
     console.log("conneted to db");
 }).catch(err=>{
     console.log(err);
